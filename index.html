@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Directory</title>
     <link rel="stylesheet" href="style.css">
-    <<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,9 @@
     <main>
         <section class="search-section">
             <h2>Search Employees</h2>
-            <label for="search" class="visually-hidden">Search employees by name or email</label>
+            <label for="search" class="visually-hidden">
+                Search employees by name or email
+            </label>
             <input
                 type="search"
                 id="search"
@@ -26,22 +29,10 @@
 
         <section class="employee-section">
             <h2>Our Team Members</h2>
-            <div class="employee-grid">
-                
-                <article class="employee-card">
-                    <h3 class="employee-name">Kaushal Kakkad</h3>
-                    <p class="employee-email">kaushal@example.com</p>
-                    <p class="employee-phone">1-770-736-8031</p>
-                    <p class="employee-job-title">Software Engineer</p>
-                    <p class="employee-company">Copan</p>
-                </article>
-                <article class="employee-card">
-                    <h3 class="employee-name">Kaushal Kakkad</h3>
-                    <p class="employee-email">kaushal@example.com</p>
-                    <p class="employee-phone">1-770-736-8031</p>
-                    <p class="employee-job-title">Software Engineer</p>
-                    <p class="employee-company">Copan</p>
-                </article>
+
+            <p id="loading-message">Loading employees...</p>
+
+            <div class="employee-grid" id="employee-container">
             </div>
         </section>
     </main>

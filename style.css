@@ -1,59 +1,91 @@
-body{
-    background-color:#f4f6f9;
-    font-family:Arial, Helvetica, sans-serif;
-    margin:0;
+* {
+    box-sizing: border-box;
 }
 
-header{
-    background-color:white;
-    padding:30px;
-    text-align:center;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.employee-card{
-    background-color:white;
-    padding:20px;
-    
-    border-radius:10px;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-.employee-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:20px;
-    padding:20px;   
-}
-
-.employee-name{
-    font-size: 20px;
-    color: #2c3e50;
-    margin-bottom:8px;
-}
-.employee-job-title{
-    font-size: 14px;
-    color: #3498db;
-    font-weight: 600;
-}
-
-.employee-email,
-.employee-phone,
-.employee-company{
-    font-size: 14px;
-    color: #666;
-    margin-bottom:8px;
-}
-
-.search-section{
+header {
+    background-color: white;
+    padding: 30px;
     text-align: center;
-    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hides the label visually but keeps it available to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.search-section {
+    text-align: center;
+    padding: 30px 0 10px;
 }
 
 .search-section input {
-    width: 60%;
+    width: 100%;
+    max-width: 400px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
+}
+
+.search-section input:focus {
+    outline: 2px solid #3498db;
+    border-color: #3498db;
+}
+
+.employee-section h2 {
+    padding: 0 0 0 4px;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.employee-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.employee-name {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 0 0 8px;
+}
+
+.employee-email,
+.employee-phone,
+.employee-company {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 8px;
+}
+
+.employee-company {
+    color: #3498db;
+    font-weight: 600;
 }

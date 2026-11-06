@@ -1,0 +1,59 @@
+body{
+    background-color:#f4f6f9;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+header{
+    background-color:white;
+    padding:30px;
+    text-align:center;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.employee-card{
+    background-color:white;
+    padding:20px;
+    
+    border-radius:10px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.employee-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    padding:20px;   
+}
+
+.employee-name{
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom:8px;
+}
+.employee-job-title{
+    font-size: 14px;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.employee-email,
+.employee-phone,
+.employee-company{
+    font-size: 14px;
+    color: #666;
+    margin-bottom:8px;
+}
+
+.search-section{
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.search-section input {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}

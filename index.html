@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Directory</title>
     <link rel="stylesheet" href="style.css">
+    <<script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Our Team</h1> 
+        <h1>Our Team</h1>
         <p>Employee Directory</p>
     </header>
+
     <main>
         <section class="search-section">
             <h2>Search Employees</h2>
+            <label for="search" class="visually-hidden">Search employees by name or email</label>
             <input
-            type="text"
-            placeholder="search by name or email..."
+                type="search"
+                id="search"
+                placeholder="Search by name or email..."
             >
-            <section class="employee-section">
-                <h2>Our team members</h2>
-                <div class="employee-grid">
-                    <article class="employee-card">
-                        <h3 class="name">kaushal</h3>
-                        <p class="job-title">software engineer</p>
-                        <p class="email">kaushal@example.com</p>
-                        <p class="phone">7379979347934</p>
-                        <p class="office">copan</p>
-                    </article>
-                    <article class="employee-card">
-                        <h3 class="name">kaushal</h3>
-                        <p class="job-title">software engineer</p>
-                        <p class="email">kaushal@example.com</p>
-                        <p class="phone">7379979347934</p>
-                        <p class="office">copan</p>
-                    </article>
-                </div>
-            </section>
+        </section>
 
-        
+        <section class="employee-section">
+            <h2>Our Team Members</h2>
+            <div class="employee-grid">
+                
+                <article class="employee-card">
+                    <h3 class="employee-name">Kaushal Kakkad</h3>
+                    <p class="employee-email">kaushal@example.com</p>
+                    <p class="employee-phone">1-770-736-8031</p>
+                    <p class="employee-job-title">Software Engineer</p>
+                    <p class="employee-company">Copan</p>
+                </article>
+                <article class="employee-card">
+                    <h3 class="employee-name">Kaushal Kakkad</h3>
+                    <p class="employee-email">kaushal@example.com</p>
+                    <p class="employee-phone">1-770-736-8031</p>
+                    <p class="employee-job-title">Software Engineer</p>
+                    <p class="employee-company">Copan</p>
+                </article>
+            </div>
         </section>
     </main>
 </body>
